@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------*/
+nav {
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav h2 {
+    padding: 0 20px;
+}
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+nav ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.active, nav ul li:hover {
+    background-color: rgba(173, 173, 173, 0.579);
+}
+.subTopic {
+    display: none;
+}
+nav ul li:hover .subTopic {
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul li:hover .subTopic ul {
+    display: block;
+    margin: 10px;
+}
+
+/* ----------------------------------*/
+header {
+    width: 100%;
+    height: 260px;
+    background-color: rgb(159, 159, 159);
+    background-size: cover;
+}
+.hero-content {
+    text-align: center;
+    max-width: 20%;
+    padding: 100px 60px 60px 60px;
+    background: rgb(159, 159, 159);
+    margin: 0 auto;
+}
+
+/* ----------------------------------*/
+.topic {
+    display: flex;
+    justify-content: space-between;
+    height: 830px;
+    background-color: rgba(210, 208, 208, 0.477);
+}
+.item {
+    width: 50%;
+    height: 750px;
+}
+.math {
+    background-image: url(img/stockimg4.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 750px;
+}
+.topic_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20pt;
+    color: grey;
+}
+.topic_list {
+    text-align: center;
+}
+.container {
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+/* ----------------------------------*/
+footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-evenly;
+    background-color: rgb(30, 30, 39);
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.bottom a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
